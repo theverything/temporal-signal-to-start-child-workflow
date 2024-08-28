@@ -1,4 +1,4 @@
-module gitlab.oc.zillow.com/jeffrey/temporal-receive
+module github.com/theverything/temporal-signal-to-start-child-workflow
 
 go 1.22.4
 

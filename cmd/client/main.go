@@ -6,7 +6,7 @@ import (
 	"log/slog"
 	"sync"
 
-	"gitlab.oc.zillow.com/jeffrey/temporal-receive/process"
+	"github.com/theverything/temporal-signal-to-start-child-workflow/process"
 	temporal "go.temporal.io/sdk/client"
 )
 
