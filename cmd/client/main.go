@@ -31,12 +31,12 @@ func main() {
 	rid := w.GetRunID()
 
 	childRun := func(v string) error {
-		return client.SignalWorkflow(context.Background(), wid, rid, "child", v)
+		return client.SignalWorkflow(context.Background(), wid, rid, process.ChildChannelName, v)
 	}
 
 	wg := sync.WaitGroup{}
 
-	for i := 0; i < 300; i++ {
+	for i := 0; i < 10; i++ {
 		i := i
 
 		wg.Add(1)

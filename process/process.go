@@ -23,7 +23,7 @@ func MainWorkflow(ctx workflow.Context, params MainWorkflowParams) error {
 	var children int
 
 	for {
-		if children >= 100 {
+		if children >= 10 {
 
 			for {
 				var value string
